@@ -72,3 +72,4 @@
 .header__navbar-link:hover .header__navbar-text::after{
     background-color: currentColor;
     width: 100%;
+}
