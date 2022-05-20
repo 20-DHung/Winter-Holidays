@@ -93,3 +93,24 @@
     display: block;
 }
 
+.subnav__list{
+    padding-left: 0;
+}
+
+.subnav__item{
+    width: 258px;
+    list-style: none;
+    text-align: left;
+    line-height: 3;
+
+}
+
+.subnav__item-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--header-text);
+    padding: 2px 30px;
+    display: block;
+    position: relative;
+}
