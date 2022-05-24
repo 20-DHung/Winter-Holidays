@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- -- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -16,303 +18,307 @@
 <body>
     <div class="wraper">
         <div class="header">
-            <div class="header_logo">
-                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="header__logo-img hide-on-mobile-tablet">        
+            <div class="mobile-header-menu hide-on-PC js-mobile-btn">
+                <i class="mobile-header-menu-icon fas fa-bars "></i>                
+            </div>
+            <div class="mobile-menu-overlay"></div>
+            <div class="header__logo">
+                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="header__logo-img hide-on-mobile-tablet">
             </div>
 
             <div class="header__navbar js-mobile-menu ">
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Home</span>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Home</span>
 
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>
 
-                        </a>
+                            </a>
 
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text"> Travel Agency</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Winter Holidays</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Summer Holidays</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">City Tours</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Wine Tours</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Vacation Showcase</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Landing</span> 
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">New Year Trip</span>  
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Pages</span>
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text"> Travel Agency</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Winter Holidays</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Summer Holidays</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">City Tours</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Wine Tours</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Vacation Showcase</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Landing</span> 
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">New Year Trip</span>  
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Pages</span>
+                                
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>
+                               
+                            </a>     
+
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">About US</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">What We Ofer</span>
+                                             </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Our Team</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Contact Us</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">FAG Page</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Coming Soon</span>
+                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Destinations</span>   
+                                
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span> 
+                            </a>     
                             
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>
-                           
-                        </a>     
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Destination List</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Destination Slider</span>
+                                            </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Destination Itern</span>
+                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">About US</span>
-                                        </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">What We Ofer</span>
-                                         </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Our Team</span>
-                                        </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Contact Us</span>
-                                        </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">FAG Page</span>
-                                        </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Coming Soon</span>
-                                        </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Tours</span>
 
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Destinations</span>   
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>                            </a>     
                             
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span> 
-                        </a>     
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Standard List</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Gallery List</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Split List</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Tour Itern</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Blog</span>
+                                
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>                            </a>     
+                            
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Blog Masonry</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Blog Standard</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Post Types</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Shop</span>  
+                                
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>                            </a>     
+                            
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Product List</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Product Single</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Shop Layout</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Shop Page</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-link">
+                                <span class="header__navbar-text">Elements</span>
+                                
+                                <span class="hide-on-PC">
+                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
+                                </span>                            </a>     
                         
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Destination List</span>
+                            <div class="subnav">
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Heading</span>
                                         </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Destination Slider</span>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Columns</span>
                                         </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Destination Itern</span>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Section Title</span>
                                         </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Tours</span>
-
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>                            </a>     
-                        
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Standard List</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Gallery List</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Split List</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Tour Itern</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Blog</span>
-                            
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>                            </a>     
-                        
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Blog Masonry</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Blog Standard</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Post Types</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Shop</span>  
-                            
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>                            </a>     
-                        
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Product List</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Product Single</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Shop Layout</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Shop Page</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="header__navbar-item">
-                        <a href="#" class="header__navbar-link">
-                            <span class="header__navbar-text">Elements</span>
-                            
-                            <span class="hide-on-PC">
-                                <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                            </span>                            </a>     
-                    
-                        <div class="subnav">
-                            <ul class="subnav__list">
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Heading</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Columns</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Section Title</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Contact Us</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">FAG Page</span>
-                                    </a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__item-link">
-                                        <span class="subnav__item-text">Coming Soon</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>      
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Contact Us</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">FAG Page</span>
+                                        </a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="" class="subnav__item-link">
+                                            <span class="subnav__item-text">Coming Soon</span>
+                                        </a>
+                                    </li>
+                                </ul>  
+                            </div>
+                        </li>
+                    </ul>
             </div>
-
+            
             <div class="header__search hide-on-mobile-tablet">
-                <div class="header__search-container">
-                    <div class="header__search-item">
-                        <i class="header__search-icon fas fa-shopping-basket"></i>
+                    <div class="header__search-container">
+                        <div class="header__search-item">
+                            <i class="header__search-icon fas fa-shopping-basket"></i>
 
-                        <div class="header__cart">
-                            <p class="header__cart-text">No products in the cart.</p>
+                            <div class="header__cart">
+                                <p class="header__cart-text">No products in the cart.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="header__search-item">
-                        <i class="header__search-icon fas fa-search"></i>
-                    </div>
+                        <div class="header__search-item">
+                            <i class="header__search-icon fas fa-search"></i>
+                        </div>
 
-                    <div class="header__search-item">
-                        <i class="header__search-icon fas fa-bars  js-bar"></i>
-                    </div>
+                        <div class="header__search-item">
+                            <i class="header__search-icon fas fa-bars  js-bar"></i>
+                        </div>
 
-                     <div class="menu-overlay"> </div>
+                        <div class="menu-overlay"> </div>
                         <div class="menu-modal">
                              <span class="menu-modal-close">
                                 <i class="menu-modal-close-icon fas fa-times js-close"></i>
@@ -347,9 +353,12 @@
                         </div>
                     </div>
             </div> 
-
-
+            <div class="mobile-header-menu hide-on-PC">
+                <i class="mobile-header-menu-icon far fa-user-circle" ></i>
+            </div>
         </div>
+        
+
     </div>
 </body>
 </html>
