@@ -443,3 +443,29 @@
       display: flex;
       margin-top: -3px;
   }
+
+  .introduce__content{
+    position: relative;
+    padding: 30px 25px;
+}
+
+
+.introduce__content-heading{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+.introduce__content-heading:hover{
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.introduce__content-subheading{
+    margin-top:16px;
+    font-size: 1.6rem;
+    color: var(--subheader-text);
+    text-align:start;
+    line-height: 1.6;
+}
