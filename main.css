@@ -470,3 +470,22 @@
     line-height: 1.6;
 }
 
+
+.introduce__content-prize-rate{
+    margin-left: 30px;
+    display: flex;
+}
+
+.introduce__content-prize-rate-icon{
+    font-size: 1.2rem;
+    padding-top: -2px;
+    line-height: 1.2rem;
+}
+
+.introduce__content-prize-rate-point{
+    margin-left: 10px;
+}
+
+.introduce__content-prize-rate-des{
+    margin-left: 10px;
+}
