@@ -613,3 +613,46 @@
     right: 0;
     color: #fff;
 }
+
+/* Review Slider  */
+.slider__review__container {
+    position: absolute;
+    width: 100%;
+    bottom: 80px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide__review-list {
+    width: 200%;
+    display: flex;
+    padding: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.slide__review-list input{
+    display: none;
+}
+
+.slide__review-item{ 
+    list-style: none;
+    padding: 0px 15px;
+    transition: 2s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+}
+
+.slide__review-item-wrap {
+    width: 507px;
+    height: 230px;
+    padding: 40px 42px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+}
+
+.slide__review-item-img {
+    padding-right: 15px;
+}
