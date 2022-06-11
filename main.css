@@ -713,3 +713,74 @@
 .slide__review-item-details-rate i {
     color: var(--primary-color);
 }
+
+.slide__review__navigation-manual {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;;
+}
+
+.manual-btn2 {
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(63,208,212,.5);
+    cursor: pointer;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+
+}
+
+.manual-btn--active {
+    background-color: var(--primary-color);
+}
+
+.manual-btn2:not(:last-child) {
+    margin-right: 15px;
+}
+
+.manual-btn2:hover {
+    background-color: var(--primary-color);
+}
+
+#radio3:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -1610px;
+}
+
+/* Holiday*/
+.holiday__item{
+    padding: 0 50px;
+    text-align: center;
+}
+
+.holiday__item-icon-img{
+    width: 76px;
+    height: 78px;
+    transition: 0.4s;
+}
+.holiday__item-icon-img:hover{
+    transform: translateY(-4px);
+    
+}
+
+.holiday__item-header{
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--header-text);
+    margin: 20px 0 12px;
+}
+
+.holiday__item-des{
+    font-size: 1.4rem;
+    color: var(--subheader-text);
+    line-height: 1.6;
+}
