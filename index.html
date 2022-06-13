@@ -25,12 +25,13 @@
     <div class="wraper">
         <div class="header">
             <div class="mobile-header-menu hide-on-PC js-mobile-btn">
-                <i class="mobile-header-menu-icon fas fa-bars "></i>                
+                <i class="mobile-header-menu-icon fa-solid fa-bars "></i>
+                               
             </div>
             <div class="mobile-menu-overlay"></div>
             <div class="header__logo">
                 <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="header__logo-img hide-on-mobile-tablet">
-                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt=""  class="hide-on-PC mobile-header__logo-img">
+                <!-- <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt=""  class="hide-on-PC mobile-header__logo-img"> -->
             </div>
 
             <div class="header__navbar js-mobile-menu ">
@@ -39,16 +40,18 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Home</span>
 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>
+                                    <i class="fa-solid fa-angle-right"></i>
+                             
+                                </span> -->
                             </a>
 
                             <div class="subnav">
                                 <ul class="subnav__list">
                                     <li class="subnav__item">
                                         <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text"> Travel Agency</span>
+                                            <span class="subnav__item-text">Travel Agency</span>
                                         </a>
                                     </li>
                                     <li class="subnav__item">
@@ -94,9 +97,9 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Pages</span>
                                 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>
+                                </span> -->
                                
                             </a>     
 
@@ -140,9 +143,9 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Destinations</span>   
                                 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span> 
+                                </span>  -->
                             </a>     
                             
                             <div class="subnav">
@@ -170,9 +173,10 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Tours</span>
 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            </a>     
+                                </span>                             -->
+                            </a>     
                             
                             <div class="subnav">
                                 <ul class="subnav__list">
@@ -203,10 +207,11 @@
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Blog</span>
-                                
+<!--                                 
                                 <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            </a>     
+                                </span>                             -->
+                            </a>     
                             
                             <div class="subnav">
                                 <ul class="subnav__list">
@@ -233,9 +238,10 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Shop</span>  
                                 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            </a>     
+                                </span>                             -->
+                            </a>     
                             
                             <div class="subnav">
                                 <ul class="subnav__list">
@@ -268,9 +274,10 @@
                             <a href="#" class="header__navbar-link">
                                 <span class="header__navbar-text">Elements</span>
                                 
-                                <span class="hide-on-PC">
+                                <!-- <span class="hide-on-PC">
                                     <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            </a>     
+                                </span>                             -->
+                            </a>     
                         
                             <div class="subnav">
                                 <ul class="subnav__list">
@@ -313,7 +320,7 @@
             <div class="header__search hide-on-mobile-tablet">
                     <div class="header__search-container">
                         <div class="header__search-item">
-                            <i class="header__search-icon fas fa-shopping-basket"></i>
+                            <i class="header__search-icon bi bi-basket3"></i>                            
 
                             <div class="header__cart">
                                 <p class="header__cart-text">No products in the cart.</p>
@@ -321,11 +328,12 @@
                         </div>
 
                         <div class="header__search-item">
-                            <i class="header__search-icon fas fa-search"></i>
+                            <i class="header__search-icon bi bi-search"></i>
+                           
                         </div>
 
                         <div class="header__search-item">
-                            <i class="header__search-icon fas fa-bars  js-bar"></i>
+                            <i class="header__search-icon bi bi-justify-right"></i>
                         </div>
 
                         <div class="menu-overlay"> </div>
@@ -1118,6 +1126,25 @@
             </a>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/e9eccf724f.js" crossorigin="anonymous"></script>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "flex";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
 
 
 </body>
