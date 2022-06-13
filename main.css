@@ -37,8 +37,6 @@
     padding-left: 0;
     margin: 0;
     height: 100%;
-    
-
 }
 
 .header__navbar-item{
@@ -376,6 +374,8 @@
     animation: text-slider-up ease-in .7s;
 
 }
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -1135,7 +1135,3 @@
     font-size: 1.6rem;
     color: #ef2853;
 }
-
-
-
-
