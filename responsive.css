@@ -1,0 +1,23 @@
+
+/* PC */
+@media (min-width: 1024px){
+    .mobile-header__logo-img{
+        display: none;
+    }
+    .hide-on-PC{
+        display: none;
+    }
+    .nav-mobile-icon{
+        display: none;
+    }
+    .content__description{
+        width: 60%;
+    }
+    .header__navbar {
+        height: 100%;
+        line-height: 42px;
+    }
+    .introduce__place {
+        height: 175px;
+    }
+}
