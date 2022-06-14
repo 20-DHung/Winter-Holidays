@@ -814,6 +814,8 @@
     transform: translateY(calc(100%));
     transition: transform linear .3s;
     transform-origin: bottom center;
+    background-color: #3abdc1;
+    animation-delay: 2s;
 
 }
 
@@ -857,6 +859,9 @@
     font-size: 1.6rem;
     color: #fff;
 }
+.row{
+    background-color: #3abdc1;
+}
 
 .member__number{
     display: flex;
@@ -865,6 +870,7 @@
     width: 100%;
     height: 248px;
     margin: 0 194px ;
+    /* background-color:#3abdc1; */
 }
 
 .member__number-item{

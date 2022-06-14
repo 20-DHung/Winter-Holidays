@@ -25,7 +25,7 @@
     <div class="wraper">
         <div class="header">
             <div class="mobile-header-menu hide-on-PC js-mobile-btn">
-                <i class="mobile-header-menu-icon fa-solid fa-bars "></i>
+                <!-- <i class="mobile-header-menu-icon fa-solid fa-bars "></i> -->
                                
             </div>
             <div class="mobile-menu-overlay"></div>
@@ -372,9 +372,9 @@
                     </div>
             </div> 
             
-            <div class="mobile-header-menu hide-on-PC">
+            <!-- <div class="mobile-header-menu hide-on-PC">
                 <i class="mobile-header-menu-icon far fa-user-circle" ></i>
-            </div>
+            </div> -->
         </div>
 
         <div class="body">
@@ -942,7 +942,7 @@
                             <div class="member__number">
                                 <div class="col l-3 m-6 c-12 ">
                                     <div class="member__number-item">
-                                        <span class="member__number-item-couter count">452</span>
+                                        <span class="member__number-item-couter count" id="452">452</span>
                                         <div class="member__number-item-title">
                                             Tourlists
                                         </div>
@@ -950,7 +950,7 @@
                                 </div>
                                 <div class="col l-3 m-6 c-12">
                                     <div class="member__number-item">
-                                        <span class="member__number-item-couter js-year-cout count">120</span>
+                                        <span class="member__number-item-couter js-year-cout count" id="120">120</span>
                                         <div class="member__number-item-title">
                                             Years
                                         </div>
@@ -958,7 +958,7 @@
                                 </div>
                                 <div class="col l-3 m-6 c-12">
                                     <div class="member__number-item">
-                                        <span class="member__number-item-couter js-cottage-cout count">283</span>
+                                        <span class="member__number-item-couter js-cottage-cout count" id="283">283</span>
                                         <div class="member__number-item-title">
                                             Cottages
                                         </div>
@@ -966,7 +966,7 @@
                                 </div>
                                 <div class="col l-3 m-6 c-12">
                                     <div class="member__number-item">
-                                        <span class="member__number-item-couter js-res-cout count">197</span>
+                                        <span class="member__number-item-couter js-res-cout count" id="197">197</span>
                                         <div class="member__number-item-title">
                                             Restaursnts
                                         </div>
@@ -1144,6 +1144,49 @@
         slides[slideIndex-1].style.display = "flex";
         setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
+    </script>
+
+    <script>
+       function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+  let currentNumber = startNumber
+  const interval = window.setInterval(updateNumber, 17)
+  function updateNumber() {
+    if (currentNumber >= finalNumber) {
+      clearInterval(interval)
+    } else {
+      let inc = Math.ceil(finalNumber / (duration / 17))
+      if (currentNumber + inc > finalNumber) {
+        currentNumber = finalNumber
+        clearInterval(interval)
+      } else {
+        currentNumber += inc
+      }
+      callback(currentNumber)
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  animateNumber(452, 3000, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('452').innerText = formattedNumber
+  })
+  
+  animateNumber(120, 3000, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('120').innerText = formattedNumber
+  })
+  
+  animateNumber(283, 3000, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('283').innerText = formattedNumber
+  })
+
+  animateNumber(197, 3000, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('197').innerText = formattedNumber
+  })
+})
     </script>
 
 
