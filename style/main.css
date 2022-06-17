@@ -61,6 +61,7 @@
 
 .header__navbar-text{
     position: relative;
+    
 }
 
 .header__navbar-text::after{
@@ -189,7 +190,7 @@
 
 .header__search-icon{
     padding: 32px 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.8rem;
 }
 
@@ -221,12 +222,12 @@
 }
 
 .header__search-icon:hover {
-    color: #3abdc1;
+    color: #3fd0d4;
 }
 
 .menu-overlay{
     position: fixed;
-    /* background-color: rgba(0,0,0,0.3); */
+    background-color: rgba(0,0,0,0.3);
     top: 0;
     left: 0;
     bottom: 0;
@@ -245,7 +246,7 @@
     overflow-x: scroll;
     box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 10%);
     transform: translateX(100%);
-    /* /* display: none; */
+    display: none;
     transition: transform ease-in-out 0.4s;
     z-index: 1;
 }
@@ -264,6 +265,7 @@
 .menu-modal-close-icon:hover{
     color: var(--primary-color);
     transition: .2s;
+    color :#ef2853;
 }
 
 .menu-modal-container{
@@ -323,7 +325,7 @@
 
 .menu-modal-link:hover{
     color: #fff;
-    background-color: #3abdc1;
+    background-color: #3fd0d4;
 }
 
 .body{
@@ -476,7 +478,7 @@
     width: 100%;
     height: 40px;
     line-height: 40px;
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color);
     color: #fff;
     display: flex;
     margin-top: -3px;
@@ -498,7 +500,7 @@
 .introduce__content-heading:hover{
     color: var(--primary-color);
     transition: 0.3s;
-    color: #3abdc1;
+    color: #3fd0d4;
 }
 
 .introduce__content-subheading{
@@ -569,7 +571,6 @@
 .content__description{
     font-size: 1.7rem;
     line-height: 1.6;
-
 }
 
 .content__sport{
@@ -642,6 +643,9 @@
     bottom: 80px;
     height: 300px;
     overflow: hidden;
+    touch-action: manipulation;
+    /* transition: all 0.6s ease 0s;
+    transform: translate3d(-5093px, 0px, 0px); */
 }
 
 .slide__review-list {
@@ -1077,7 +1081,7 @@
 .footer__contact-input{
     width: 100%;
     padding: 10px;
-    /* background-color: rgba(255,255,255,.25); */
+    background-color: rgba(255,255,255,.25);
     border: none;
     outline: 0;
     font-size: 1.4rem;
@@ -1101,20 +1105,9 @@
     transition: ease-in-out .2s;
 }
 
-.footer__bottom{
-    font-size: 1.4rem;
-    color: var(--footer-color);
-    text-align: center;
-    padding: 30px;
-}
-.footer__bottom-link{
-    text-decoration: none;
-    color: #fff;
-}
-
-.footer__bottom-link:hover{
-    color: var(--primary-color);
-    transition: 0.3s;
+.footer-img {
+    float: inline-end;
+    padding-top: 30px ;
 }
 
 /* CART ICON */
