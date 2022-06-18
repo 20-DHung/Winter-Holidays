@@ -415,10 +415,15 @@
                             </div>
                         </div>
 
-                        <div class="header__search-item">
-                            <i class="header__search-icon bi bi-search"></i>
+                        <div id="show-moda" class="header__search-item">
+                            
+                            <a href="#" class="header-icon__link">
+                                <i class="header__search-icon bi bi-search"></i>
+                            </a>
                            
                         </div>
+
+                        
 
                         <div class="header__search-item">
                             <i class="header__search-icon bi bi-justify-right"></i>
@@ -462,6 +467,18 @@
                         </div>
                     </div>
             </div> 
+            <div id="moda-appear">
+                <div class="moda-body">
+                    <input type="text" placeholder="Search..." class="moda-body-input">
+                    <span class="moda-body-btn">find now</span>
+                </div>
+                <div id="moda-close" class="center">
+                    <i  class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            
+            
+
             
             <!-- <div class="mobile-header-menu hide-on-PC">
                 <i class="mobile-header-menu-icon far fa-user-circle" ></i>
@@ -1298,7 +1315,23 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
         })
     </script> 
 
+<script>
+    //  moda-search
+    const moda1 = document.getElementById('show-moda');
+    const moda2 = document.getElementById('moda-appear');
+    moda1.onclick = function(){
+        moda2.style.width = '100vw';
+    }
+
+    const closedModa = document.getElementById('moda-close');
+    closedModa.onclick = function(){
+        moda2.style.width = '0'
+        moda2.style.animation='fadeIn linear 1s';
+    }
+
     
+
+</script>
 
 
 
