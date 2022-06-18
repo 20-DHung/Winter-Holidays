@@ -407,12 +407,12 @@
 
   /* MAiN SLIDE */
 
-  .slider{
+.slider{
     overflow: hidden;
 
-  }
+}
 
-  .mySlides {
+.mySlides {
   display: none;
   position: relative;
   align-items: center;
