@@ -1,0 +1,110 @@
+ 
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+button {
+    background-color:aquamarine;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+} 
+   
+
+button:hover {
+    opacity: 0.8;
+}
+
+  
+ .logincontainer {
+    text-align: center;
+    padding-top: 40px;
+ }
+  
+  
+ .container {
+    padding: 16px;
+}
+
+.container__list a {
+    text-decoration: none;
+}
+  
+span.psw {
+   float: right;
+   text-decoration: none;
+   color: black;
+} 
+.container__list a:hover{
+    color: aqua;
+}
+
+
+.container__list {
+    padding-bottom: 0px;
+} 
+
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+}    
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1; 
+}
+  
+ 
+.registerbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+  
+  
+.registerbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.registersbtn {
+    background-color: #f44336;
+}
+  
+
+.container {
+    padding: 16px;
+}
+
+.clearfix a {
+    text-decoration: none;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
