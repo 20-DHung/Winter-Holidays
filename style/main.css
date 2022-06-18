@@ -229,6 +229,74 @@
     color: #3fd0d4;
 }
 
+#moda-appear{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgba(63, 208, 212,0.8);
+    display: flex;
+    transition-duration: 0.3s;
+    animation: appear ease-in 0.3s, fadeIn ease-out 0.3s;
+    -webkit-animation: appear ease-in 0.3s, fadeIn ease-out 0.3s;
+}
+
+.moda-body{
+    height: 78px;
+    width: 930px;
+    background-color: var(--white-color);
+    margin: auto;
+    display: flex;
+}
+.moda-body-input{
+    height: 90%;
+    width: 78%;
+    padding: 0 20px;
+    margin: auto;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    
+}
+
+
+.moda-body-btn{
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--white-color);
+    text-transform:uppercase;
+    background-color: var(--primary-color);
+    line-height: 78px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    transition-duration: 0.2s;
+}
+
+#moda-close{
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+#moda-close i{
+    font-size: 3rem;
+    color: var(--white-color);
+    
+}
+
 .menu-overlay{
     position: fixed;
     background-color: rgba(0,0,0,0.3);
