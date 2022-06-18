@@ -253,7 +253,7 @@
     display: flex;
 }
 .moda-body-input{
-    height: 90%;
+    height: 100%;
     width: 78%;
     padding: 0 20px;
     margin: auto;
@@ -279,6 +279,7 @@
     user-select: none;
     -webkit-user-select: none;
     transition-duration: 0.2s;
+    
 }
 
 #moda-close{
