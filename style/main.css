@@ -1224,3 +1224,27 @@
     font-size: 1.6rem;
     color: #ef2853;
 }
+
+
+#myBtn {
+    display: block;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border-radius: 100%;
+    outline: none; 
+    background-color: #fff; 
+    color:#3fd0d4; 
+    cursor: pointer; 
+    font-size: 18px; 
+    width: 60px;
+    height: 60px;
+    border:none;;
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #3fd0d4; 
+    color: #fff;
+  }

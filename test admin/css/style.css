@@ -1,4 +1,4 @@
- 
+
   input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -6,6 +6,7 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    
   }
   
   
@@ -28,11 +29,13 @@ button:hover {
  .logincontainer {
     text-align: center;
     padding-top: 40px;
+   
  }
   
   
  .container {
     padding: 16px;
+    
 }
 
 .container__list a {
@@ -108,4 +111,7 @@ button:hover {
     content: "";
     clear: both;
     display: table;
+}
+element.style {
+
 }
