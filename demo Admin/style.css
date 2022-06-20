@@ -134,4 +134,10 @@ label #sidebar_btn:hover{
 #check{
     display: none;
 }
-        
+     
+.container{
+    display:inline-flex;
+}
+.menu{
+    display:inline-block
+}
