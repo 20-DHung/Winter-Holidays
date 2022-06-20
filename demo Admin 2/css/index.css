@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    margin-top: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.title .title_user{
+    vertical-align: middle;
+}
+.button{
+    text-align: center;
+    height: auto;
+    width: auto;
+    
+}
+
+.button .buttun-item{
+    display:inline-flex;
+}
+
+.table {
+   /* margin-right: 20px; */
+   padding-right: 100px;
+    margin-top: 20px;
+}
+.table .header-table{
+    background-color: rgba(0,0,0,.03);
+    border-radius: 900px;
+    margin-left: 25px;
+}
