@@ -3,7 +3,8 @@
 .imgmain {
     display: block;
     /* display: none; */
-    width: 100%;
+    width: 40%;
+    height: 400px;
     /* padding-bottom: 200px; */
     
 }
@@ -332,7 +333,7 @@ h2 {
   .numbertext {
     color: #212121;
     font-size: 12px;
-    padding: 1px 130px;
+    padding: 15px 275px;
     position: absolute;
     top: 0;
   }
@@ -359,10 +360,10 @@ h2 {
   }
   
  .prev {
-    left: 65px;
+    left: 217px;
  }
   .next {
-    right: 65px;
+    right: 217px;
     border-radius: 100%;
   }
   
