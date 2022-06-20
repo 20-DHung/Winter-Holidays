@@ -144,7 +144,7 @@
 .mainslide-wrapper {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #TourPlan h3 {
