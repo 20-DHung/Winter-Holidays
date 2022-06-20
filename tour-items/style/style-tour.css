@@ -158,10 +158,44 @@ h1 {
 
 
 /* vanh */
+
+
+
+
+.atom{
+    color: #2c2b2b;
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    line-height: 3;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type:circle;
+    font-weight: bold;
+}
+
+.filter .img{
+  display: flex;
+  justify-content: space-around;
+}
+.img .img-item{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  border-radius: 800;
+}
+
+.content{
+  font-family: Poppins,sans-serif;
+}
 .title{
     margin-bottom: 60px;
     font-weight: 700;
-    font-size:xx-large;
+    font-size:x-large;
 }
 .content{
     height: auto;
@@ -189,14 +223,16 @@ h1 {
 }
 body{
     line-height: 2em;
+    font-family: Poppins,sans-serif;
 }
 .tour-item{
     font-size: 15px;
-    line-height: 30px;
-    font-family: Poppins,sans-serif;
+    line-height: 100px;
     font-weight: 600;
     color: #505050;
     margin-left: 30px;
+    margin-top: 20px;
+    
 }
 .item{
     line-height: 40px;
@@ -234,23 +270,24 @@ body{
     
     color:black;
 }
-
-/* .join-now:hover{
-     background-color:#34a9ad; 
-     color: var(--text-color--);
-    transition: ease-in-out .2s;
-    color: black; 
-   
-}  */
-
-
 .day{
-    font-weight: 800;
+    font-weight:bold;
 }
 .day:hover{
     color: #3fd0d4;
 }
-
+.bold{
+  font-weight: bold;
+}
+.icon{
+  display: flex;
+  font-size: xx-large;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.icon-item{
+  text-align: center;
+}
 
 
 
