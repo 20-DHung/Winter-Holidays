@@ -189,11 +189,24 @@
     border-radius: 2px;
 }
 
-.main-content .card-single span:first-child {
+.main-content .card-single div:last-child span {
     font-size: 3rem;
+    color: tomato;    
 }
 
-.main-content .card-single span:last-child {
+.main-content .card-single div:first-child span {
     
     color: tomato;
 }
+
+.main-content .card-single:last-child {
+    background-color: #fff;
+}
+/* .main-content .card-single:last-child h1 , */
+.main-content .card-single:last-child div:last-child span 
+/* .main-content .card-single:last-child div:first-child span */{
+    color: #fff;
+}
+
+
+
