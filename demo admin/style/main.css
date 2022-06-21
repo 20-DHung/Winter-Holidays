@@ -53,7 +53,7 @@
     left: 0;
     top: 0; 
     height: 100%;
-    background-color: #636e72;
+    background-color: #D8E2EC;
     z-index: 100;
 }
 
@@ -163,7 +163,7 @@
 
 .user-wrapper h4 {
     display: inline-block;
-    color: black;
+    color: yellow;
 
 }
 
@@ -196,23 +196,4 @@
 .main-content .card-single span:last-child {
     
     color: tomato;
-}
-
-
-
-
-
-
-
-
-
-.content{  
-    margin-left: 350px;
-}
-
-.content .button{
-    display: flex;
-}
-.table .header-table h2{
-    text-align: center;
 }
