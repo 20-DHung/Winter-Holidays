@@ -53,7 +53,7 @@
     left: 0;
     top: 0; 
     height: 100%;
-    background-color: #D8E2EC;
+    background-color: #636e72;
     z-index: 100;
 }
 
@@ -163,7 +163,7 @@
 
 .user-wrapper h4 {
     display: inline-block;
-    color: yellow;
+    color: black;
 
 }
 
@@ -198,15 +198,5 @@
     
     color: tomato;
 }
-
-.main-content .card-single:last-child {
-    background-color: #fff;
-}
-/* .main-content .card-single:last-child h1 , */
-.main-content .card-single:last-child div:last-child span 
-/* .main-content .card-single:last-child div:first-child span */{
-    color: #fff;
-}
-
 
 
