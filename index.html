@@ -3,1217 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- -- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="/style/base.css"> 
-    <link rel="stylesheet" href="/style/grid.css">
-    <link rel="stylesheet" href="/style/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/demo admin/style/account.css">
+    <link rel="stylesheet" href="/demo admin/style/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
-        <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
-      </svg>
-
-    <title>Winter-Holidays</title>
-    
+    <!-- CSS only -->
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wraper">
-        <div class="header">
-            <div class="mobile-header-menu hide-on-PC js-mobile-btn">
-                <i class="mobile-header-menu-icon fa-solid fa-bars "></i>
-                               
-            </div> 
-            <div class="mobile-menu-overlay"></div>
-            <div class="header__logo">
-                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt="" class="header__logo-img hide-on-mobile-tablet">
-                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png" alt=""  class="hide-on-PC mobile-header__logo-img">
-            </div>
 
-            <div class="header__navbar js-mobile-menu ">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="/index.html" class="header__navbar-link">
-                                <span class="header__navbar-text" style="color:#3fd0d4;">Home</span>
-
-                                 <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                    <i class="fa-solid fa-angle-right"></i>
-                             
-                                </span> 
-                            </a>
-
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                           <span class="subnav__item-text">Travel Agency</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Winter Holidays</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Summer Holidays</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">City Tours</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Wine Tours</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Vacation Showcase</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Landing</span> 
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">New Year Trip</span>  
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Pages</span>
-                                
-                                <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>
-                               
-                            </a>     
-
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">About US</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">What We Ofer</span>
-                                             </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Our Team</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Contact Us</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">FAG Page</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Coming Soon</span>
-                                            </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Destinations</span>   
-                                
-                                <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span> 
-                            </a>     
-                            
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Destination List</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Destination Slider</span>
-                                            </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Destination Itern</span>
-                                            </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Tours</span>
-
-                                 <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                             
-                            </a>     
-                            
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Standard List</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Gallery List</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Split List</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Tour Itern</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Blog</span>
-                               
-                                <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                             
-                            </a>     
-                            
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Blog Masonry </span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Blog Standard</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Post Types</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Shop</span>  
-                                
-                                <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            
-                            </a>     
-                            
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Product List</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Product Single</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Shop Layout</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Shop Page</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </li>
-
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-link">
-                                <span class="header__navbar-text">Elements</span>
-                                
-                                <span class="hide-on-PC">
-                                    <i class="nav-mobile-icon  fas fa-angle-right"></i>
-                                </span>                            
-                            </a>     
-                        
-                            <div class="subnav">
-                                <ul class="subnav__list">
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Heading</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Columns</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Section Title</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Contact Us</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">FAG Page</span>
-                                        </a>
-                                    </li>
-                                    <li class="subnav__item">
-                                        <a href="" class="subnav__item-link">
-                                            <span class="subnav__item-text">Coming Soon</span>
-                                        </a>
-                                    </li>
-                                </ul>  
-                            </div>
-                        </li>
-                    </ul>
-            </div>
-            
-            <div class="header__search hide-on-mobile-tablet">
-                    <div class="header__search-container">
-                        <div class="header__search-item">
-                            <i class="header__search-icon bi bi-basket3"></i>                            
-
-                            <div class="header__cart">
-                                <p class="header__cart-text">No products in the cart.</p>
-                            </div>
-                        </div>
-
-                        <div id="show-moda" class="header__search-item" > 
-                            <a href="#" class="header-icon__link">
-                                <i class="header__search-icon bi bi-search" style="color: black ;"></i>
-                            </a>   
-                        </div>
-
-                        <div class="header__search-item">
-                            <a href="/Form Login/login.html"><i class="header__search-icon bi bi-person-circle" style="color: black;"></i></a>
-                        </div>
-
-                    </div>
-            </div> 
-            <div id="moda-appear">
-                <div class="moda-body">
-                    <input type="text" placeholder="Search..." class="moda-body-input">
-                    <span class="moda-body-btn">find now</span>
-                </div>
-                <div id="moda-close" class="center">
-                    <i  class="bi bi-x-lg"></i>
-                </div>
-            </div>
-            
-            
-
-            
-            <div class="mobile-header-menu hide-on-PC">
-                <i class="mobile-header-menu-icon far fa-user-circle" ></i>
-            </div>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-accusoft"></span> ADMIN</h2>
         </div>
 
-        <div class="body">
-            <div class="grid">
-                <!-- MAIN SLIDE -->
-                <div class="slider">
-                    <div class="row">
-                        <div class=" col l-12 m-12 c-12 ">
-                            <div class="mySlides fade">
-                                <img src="https://images.pexels.com/photos/848618/pexels-photo-848618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="mySlides-img" >
-                                <div class="main-text">From Alps</div>
-                                <div class="text">Snow Adventur</div>
-                                <div class="sub-text"></div>
-                            </div>
-                        </div>
-                    
-                        <div class="col l-12 m-12 c-12 ">
-                            <div class="mySlides fade">
-                                <img src="https://images.pexels.com/photos/352093/pexels-photo-352093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  class="mySlides-img"  >
-                                <div class="main-text">Enjoy Your </div>
-                                <div class="text">Winter Vacations</div>
-                                <div class="sub-text"> </div>
-                            </div>
-                        </div>           
-                    </div>                 
-                </div>
-
-                <div class="introduce">
-                    <div class="grid">
-                        <div class="row sm-gutter">
-                            <div class=" col l-2-4 m-6 c-0">
-                                <div class="introduce__container">
-                                    <div class="introduce__place" >
-                                        <a href="" class="introduce__place-link" style="display: block;">
-                                            <img class="introduce__place-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-19.jpg" alt="">
-                                        </a>
-                                    </div>
-    
-                                    <div class="introduce__place-in4">
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fa-regular fa-calendar"></i>
-                                            <span>1</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-user"></i>
-                                            
-                                            <span>13+</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-map-marker-alt"></i>
-                                            <span>Skiing</span>
-                                        </div>
-                                    </div>
-                                    <div class="introduce__content">
-                                        <a href="/tour-items/Kids-Ski-School.html" class="introduce__content-heading" >Kids Ski School</a>
-                                        <div class="introduce__content-subheading">Idyllic chalets, fun-packed ski resorts and Northern Lights viewings... </div>
-                                        <div class="introduce__content-prize">
-                                            <span class="introduce__content-prize-cost">$1600</span>
-                                            <div class="introduce__content-prize-rate">
-                                                
-                                                <i class="introduce__content-prize-rate-icon fas fa-star-half-alt"></i>
-                                                <span class="introduce__content-prize-rate-point">6.7</span>
-                                                <span class="introduce__content-prize-rate-des">Good</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col l-2-4 m-6 c-0 ">
-                                <div class="introduce__container">
-                                    <div class="introduce__place" >
-                                        <a href="" class="introduce__place-link" style="display: block;">
-                                            <img class="introduce__place-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-18.jpg" alt="">
-                                        </a>
-                                    </div>
-    
-                                    <div class="introduce__place-in4">
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon bi bi-calendar"></i>
-                                            <span>1</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-user"></i>
-                                            <span>13+</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-map-marker-alt"></i>
-                                            <span>Skiing</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="introduce__content">
-                                        <a href="/tour-items/Snow-Surfing.html" class="introduce__content-heading">Snow Surfing</a>
-                                        <div class="introduce__content-subheading">Cross country skiing on fairy-tale trails, walking in romantic... </div>
-                                        <div class="introduce__content-prize">
-                                            <span class="introduce__content-prize-cost">$720</span>
-                                            <div class="introduce__content-prize-rate">
-                                                
-                                                <i class="introduce__content-prize-rate-icon fas fa-star"></i>
-                                                <span class="introduce__content-prize-rate-point">7.3</span>
-                                                <span class="introduce__content-prize-rate-des">Good</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col l-2-4 m-6 c-12 ">
-                                <div class="introduce__container">
-                                    <div class="introduce__place" >
-                                        <a href="" class="introduce__place-link" style="display: block;">
-                                            <img class="introduce__place-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-16.jpg" alt="">
-                                        </a>
-                                    </div>
-    
-                                    <div class="introduce__place-in4">
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon bi bi-calendar"></i>
-                                            <span>1</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-user"></i>
-                                            <span>13+</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-map-marker-alt"></i>
-                                            <span>Skiing</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="introduce__content">
-                                        <a href="/tour-items/Magic-of-Italy.html" class="introduce__content-heading">Magic Of Italy</a>
-                                        <div class="introduce__content-subheading">Incredible winter landscape at sunset in the mountains, photo forest...</div>
-                                        <div class="introduce__content-prize">
-                                            <span class="introduce__content-prize-cost">$1000</span>
-                                            <div class="introduce__content-prize-rate">
-                                                
-                                                <i class="introduce__content-prize-rate-icon fas fa-star"></i>
-                                                <span class="introduce__content-prize-rate-point">6.7</span>
-                                                <span class="introduce__content-prize-rate-des">Superb</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col l-2-4 m-6 c-0 ">
-                                <div class="introduce__container">
-                                    <div class="introduce__place" >
-                                        <a href="" class="introduce__place-link" style="display: block;">
-                                            <img class="introduce__place-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-14.jpg" alt="">
-                                        </a>
-                                    </div>
-    
-                                    <div class="introduce__place-in4">
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon bi bi-calendar"></i>
-                                            <span>1</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-user"></i>
-                                            <span>13+</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-map-marker-alt"></i>
-                                            <span>Skiing</span>
-                                        </div>
-                                    </div>
-                                    <div class="introduce__content">
-                                        <a href="/tour-items/Acitve-Winter.html" class="introduce__content-heading">Active Winter</a>
-                                        <div class="introduce__content-subheading">If you like skiing, welcome to Turkey. During your winter craft in Turkey...</div>
-                                        <div class="introduce__content-prize">
-                                            <span class="introduce__content-prize-cost">$3600</span>
-                                            <div class="introduce__content-prize-rate">
-                                                
-                                                <i class="introduce__content-prize-rate-icon fas fa-star-half-alt"></i>
-                                                <span class="introduce__content-prize-rate-point">7.3</span>
-                                                <span class="introduce__content-prize-rate-des">Good</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col l-2-4 m-0 c-0">
-                                <div class="introduce__container">
-                                    <div class="introduce__place" >
-                                        <a href="" class="introduce__place-link" style="display: block;">
-                                            <img class="introduce__place-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/tour-featured-img-15.jpg" alt="">
-                                        </a>
-                                    </div>
-    
-                                    <div class="introduce__place-in4">
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon bi bi-calendar"></i>
-                                            <span>1</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-user"></i>
-                                            <span>13+</span>
-                                        </div>
-                                        <div class="introduce__place-in4-item">
-                                            <i class="introduce__place-in4-icon fas fa-map-marker-alt"></i>
-                                            <span>Skiing</span>
-                                        </div>
-                                    </div>
-                                    <div class="introduce__content">
-                                        <a href="/tour-items/Winter-Action.html" class="introduce__content-heading">Winter Action</a>
-                                        <div class="introduce__content-subheading">The next winter sports area is in the vicinity: SkiWelt Amade ... </div>
-                                        <div class="introduce__content-prize">
-                                            <span class="introduce__content-prize-cost">$960</span>
-                                            <div class="introduce__content-prize-rate">
-                                                
-                                                <i class="introduce__content-prize-rate-icon fas fa-star"></i>
-                                                <span class="introduce__content-prize-rate-point">6.0</span>
-                                                <span class="introduce__content-prize-rate-des">Good</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-                
-                <div class="sport">
-                    <div class="content__section">
-                        <div class="grid wide">
-                            <div class="content-common">
-                                <span class="content__tophead">Try Now</span>
-                                <h1 class="content__heading">Winter Sports</h1>
-                            </div>
-    
-                            <div class="content__sport l-8 l-o-2" >
-                                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen></iframe> </iframe></div>
-                                <p class="content__description" style="width: 100%;">You can have a great trip at any of the ski resorts in Turkey. You can also join the Orient Express Train Tour, which will give you a wonderful winter scenery following the rail line east from Central Anatolia. You will have unforgettable experiences with Winter Sports.
-
-                                </p>
-                                <a href="#" class="content__view">
-                                    View More
-                                </a>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review">
-                    <div class="content__section">
-                        <div class="content__review-background"></div>
-                        <div class="grid wide">
-                            <div class="content-common content__review-text">
-                                <h1 class="content__heading">Top Review</h1>
-                                <p class="content__description">Feedback from customers who have used the service of Winter Holidays
-
-                                </p>
-                            </div>
-    
-                        </div>
-                    </div>
-
-                    <div class="slider__review__container">
-                            <!--slider------------------->
-                            <ul class="slide__review-list">
-                                <!-- Radio button -->
-                                <input type="radio" name="radio-btn2" id="radio3">
-                                <input type="radio" name="radio-btn2" id="radio4">
-    
-                                <li class=" slide__review-item  first">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-6.png" alt="">
-                                        </div>
-                                        <div class="slide__review-item-details">
-                                            <a href="#" class="slide__review-item-details-name">Beautiful Holland</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">
-                                                This is a great place, you should come here to experience </a>
-                                            <span class="slide__review-item-details-info">Carol Silva</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class=" slide__review-item ">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-5.png" alt="">
-                                        </div>
-                                        <div class="review__item__details">
-                                            <a href="#" class="slide__review-item-details-name">Barcelona</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">
-                                                Barcelona is my hometown, a great place to travel </a>
-                                            <span class="slide__review-item-details-info">James Fisher</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class=" slide__review-item ">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-4.png" alt="">
-                                        </div>
-                                        <div class="review__item__details">
-                                            <a href="#" class="slide__review-item-details-name">Kaohsiung</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">
-                                                This place has a lot of beautiful scenery, I really like it </a>
-                                            <span class="slide__review-item-details-info">Roger Brooks</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class=" slide__review-item ">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-3.png" alt="">
-                                        </div>
-                                        <div class="review__item__details">
-                                            <a href="#" class="slide__review-item-details-name">Taipei</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">
-                                                I had a wonderful stay beyond all expectations </a>
-                                            <span class="slide__review-item-details-info">Susan Day</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class=" slide__review-item ">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-2.png" alt="">
-                                        </div>
-                                        <div class="review__item__details">
-                                            <a href="#" class="slide__review-item-details-name">tarragona</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">
-                                                This place is very beautiful, worth the experience  </a>
-                                            <span class="slide__review-item-details-info">Carl Moore</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class=" slide__review-item  ">
-                                    <div class="slide__review-item-wrap">
-                                        <div class="slide__review-item-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/user-img-7.png" alt="">
-                                        </div>
-                                        <div class="review__item__details">
-                                            <a href="#" class="slide__review-item-details-name">Holland Canals</a>
-                                            <span class="slide__review-item-details-rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </span>
-                                            <a class="slide__review-item-details-text">A great introduction to a very pretty, university city. The commentary, available in several languages on headphones, was good but was challenging to hear over the loud Dutch commentary.</a>
-                                            <span class="slide__review-item-details-info">Ema Cooper</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- manual navigation -->
-                            <div class="slide__review__navigation-manual">
-                                <label for="radio3" class="manual-btn2 manual-btn--active js-dot-1"></label>
-                                <label for="radio4" class="manual-btn2 js-dot-2"></label>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="holiday">
-                    <div class="content__section">
-                        <div class="grid wide">
-                            <div class="content-common">
-                                <span class="content__tophead">Enjoy Your</span>
-                                <h1 class="content__heading">Winter Holiday</h1>
-                                <p class="content__description">Come to us to have the best winter vacation</p>
-                            </div>
-                            <div class="row">
-                                <div class="col l-3 m-12 c-12 ">
-                                    <div class="holiday__item">
-                                        <div class="holiday__item-icon">
-                                            <img class="holiday__item-icon-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-1.png" alt="">
-                                        </div>
-                                        <div class="holiday__item-header">
-                                            Restaurants
-                                        </div>
-                                        <div class="holiday__item-des">
-                                            Restaurants with the best services
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-12 c-12">
-                                    <div class="holiday__item">
-                                        <div class="holiday__item-icon">
-                                            <img class="holiday__item-icon-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-2.png" alt="">
-                                        </div>
-                                        <div class="holiday__item-header">
-                                            Sightseeing
-                                        </div>
-                                        <div class="holiday__item-des">
-                                            Visit famous and beautiful places
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-12 c-12">
-                                    <div class="holiday__item">
-                                        <div class="holiday__item-icon">
-                                            <img class="holiday__item-icon-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-3.png" alt="">
-                                        </div>
-                                        <div class="holiday__item-header">
-                                            Shops & Boutiques
-                                        </div>
-                                        <div class="holiday__item-des">
-                                            Lots of shops all over the place
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-12 c-12">
-                                    <div class="holiday__item">
-                                        <div class="holiday__item-icon">
-                                            <img class="holiday__item-icon-img" src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/h1-custom-icon-img-4.png" alt="">
-                                        </div>
-                                        <div class="holiday__item-header">
-                                            Where to Stay
-                                        </div>
-                                        <div class="holiday__item-des">
-                                            Go where you want to go and enjoy it
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="member">
-                    <div class="grid">
-                        <div class="row no-gutters">
-                            <div class="col l-3 m-6 c-12  member__item">
-                                <div class="member__item-img">
-                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-7-1.jpg" alt="">
-                                </div>
-                                <div class="member__item-in4">
-                                    <div class="member__item-in4-name">Kaohsiung</div>
-                                    <div class="member__item-in4-description">I just wanted to say that I truly appreciate your hard work and passion behind these stunning shots</div>
-                                    <div class="member__item-in4-social">
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-facebook-f"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-instagram"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fab fa-pinterest-p"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-6 c-12 member__item">
-                                <div class="member__item-img">
-                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-6-1.jpg" alt="">
-        
-                                </div>
-                                <div class="member__item-in4">
-                                    <div class="member__item-in4-name">ALex Joyer</div>
-                                    <div class="member__item-in4-description">Those are all amazing places....great work on capturing the landscapes</div>
-                                    <div class="member__item-in4-social">
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-facebook-f"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-instagram"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fab fa-pinterest-p"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-6 c-12 member__item">
-                                <div class="member__item-img">
-                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-9.jpg" alt="">
-        
-                                </div>
-                                <div class="member__item-in4">
-                                    <div class="member__item-in4-name"> David Killer</div>
-                                    <div class="member__item-in4-description">appreciate your good intentions doing all these for us... be blessed & enjoy your holidays</div>
-                                    <div class="member__item-in4-social">
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-facebook-f"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-instagram"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fab fa-pinterest-p"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col l-3 m-6 c-12 member__item">
-                                <div class="member__item-img">
-                                    <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/our-team-img-8-1.jpg" alt="">
-                                </div>
-                                <div class="member__item-in4">
-                                    <div class="member__item-in4-name">Salar Brew</div>
-                                    <div class="member__item-in4-description">Scotland is beautiful too in winter.</div>
-                                    <div class="member__item-in4-social">
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-facebook-f"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-instagram"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fab fa-pinterest-p"></i>
-                                        </a>
-                                        <a class="member__item-in4-social-link" href="">
-                                            <i class="member__item-in4-social-icon fab fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="member__number">
-                                <div class="col l-3 m-6 c-12 ">
-                                    <div class="member__number-item">
-                                        <span class="member__number-item-couter js-tour-cout" id="452">452</span>
-                                        <div class="member__number-item-title">
-                                            Tourlists
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-12">
-                                    <div class="member__number-item">
-                                        <span class="member__number-item-couter js-year-cout count" id="120">120</span>
-                                        <div class="member__number-item-title">
-                                            Years
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-12">
-                                    <div class="member__number-item">
-                                        <span class="member__number-item-couter js-cottage-cout count" id="283">283</span>
-                                        <div class="member__number-item-title">
-                                            Cottages
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-12">
-                                    <div class="member__number-item">
-                                        <span class="member__number-item-couter js-res-cout count" id="197">197</span>
-                                        <div class="member__number-item-title">
-                                            Restaursnts
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="resort">
-                    <div class="content__section">
-                        <div class="grid wide">   
-                            <div class="content-common">
-                                <span class="content__tophead">Choose Your</span>
-                                <h1 class="content__heading">Winter Resort</h1>
-                                <p class="content__description">The best places to soak up some culture on your travels. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resort__container">
-                        <div class="grid">
-                            <div class="row">
-                                <div class="col l-4 m-6 c-12 pading">
-                                    <div class="resort__place">
-                                        <div class="resort__place-link-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-8-1.jpg" alt="" class="resort__place-img">
-                                        </div>
-                                        <a href="https://setsail.qodeinteractive.com/destinations/slovenia/" class="resort__place-link"> 
-                                        </a>
-                                        <span class="resort__place-text">Slovenia</span>
-                                    </div>
-                                </div>
-
-                                <div class="col l-4 m-6 c-12 pading">
-                                    <div class="resort__place">
-                                        <div class="resort__place-link-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-9-1.jpg" alt="" class="resort__place-img">
-                                            
-                                            
-                                            <a href="https://setsail.qodeinteractive.com/destinations/france/" class="resort__place-link"></a>
-                                            <div class="resort__place-rate">
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        
-                                        </a>
-                                        <span class="resort__place-text">France</span>
-                            
-                                    </div>
-    
-                                </div>
-                                <div class="col l-4 m-6 c-12 pading">
-                                    <div class="resort__place">
-                                        <div class="resort__place-link-img">
-                                            <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/10/destinations-featured-img-10-1.jpg" alt="" class="resort__place-img">
-                                        </div>
-                                        <a href="https://setsail.qodeinteractive.com/destinations/switzerland/" class="resort__place-link">
-                                        </a>
-                                        <span class="resort__place-text">Switzerland</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="grid">
-                <div class="footer__container">
-                    <div class="row">
-                        <div class="col l-3 m-6 footer-item">
-                            <div class="footer__logo">
-                                <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-footer.png" alt="" class="footer__logo-img">
-                            </div>
-                            <div class="footer__description">
-                                Idyllic chalets, fun-packed ski resorts and Northern Lights viewings.
- 
-                            </div>
-                            <a href="mailto:setsail@qode.com" class="footer__link">
-                                <i class="footer-icon far fa-envelope"></i>
-                                setsail@example.com
-                            </a>
-                            <a href="tel:1%20562%20867%205309" class="footer__link">
-                                <i class="footer-icon fas fa-phone-alt"></i>
-                                1 562 863 5369
-                            </a>
-                            <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" class="footer__link">
-                                <i class="footer-icon fas fa-map-marker-alt"></i>
-                                Broadway & Morris St, New York
-                            </a>
-                        </div>
-                        <div class="col l-3 m-6 footer-item">
-                            <div class="footer__heading">Our Recent Posts</div>
-                            <ul class="footer__place-list">
-                                <li class="footer__place-item">
-                                    <a href="" class="footer__place-item-link-name">Visit Thailand, Bali And China</a>
-                                    <a href="" class="footer__place-item-link-day">June 24, 2022</a>
-                                </li>
-                                <li class="footer__place-item">
-                                    <a href="" class="footer__place-item-link-name">The Sound Of Our Jungle</a>
-                                    <a href="" class="footer__place-item-link-day">June 24, 2022</a>
-                                </li>
-                                <li class="footer__place-item">
-                                    <a href="" class="footer__place-item-link-name">New Year, New Resolutions!</a>
-                                    <a href="" class="footer__place-item-link-day">June 24, 2022</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col l-3 m-6 footer-item">
-                            <div class="footer__heading">Subscribe to our Newsletter</div>
-                            
-                            <div class="footer__contact">
-                                <form action="">
-                                    <div class="footer__contact-wrap">
-                                        <i class="footer-icon fas fa-user"></i>
-                                        <input class="footer__contact-input" type="text" required placeholder="Name">  
-                                    </div>
-                                    <div class="footer__contact-wrap">
-                                        <i class="footer-icon far fa-envelope"></i>
-                                        <input class="footer__contact-input" type="email" required placeholder="Email">  
-                                    </div>
-                                    
-                                    <input class="footer__contact-subcrice" type="submit" value="Subcribe">
-                                </form>
-
-                            </div>
-                        </div>
-                        <div class="col l-3 m-6 footer-item">
-                            <div class="footer__heading">Our Instagram</div>
-                            <span class="footer__subheading">Some interesting pictures of our places</span>
-                            
-                                <div class="footer-img">
-                                    <img src="/style/img/img1.jpg" class="float-end" alt="Paris" width="50" height="50"> 
-                                    <img src="/style/img/img2.jpg" class="float-end" alt="Paris" width="50" height="50">
-                                    <img src="/style/img/img3.jpg" class="float-end" alt="Paris" width="50" height="50">
-                                    <img src="/style/img/img4.jpg" class="float-end" alt="Paris" width="50" height="50">
-                                    <img src="/style/img/img5.jpg" class="float-end" alt="Paris" width="50" height="50">
-                                    <img src="/style/img/img6.jpg" class="float-end" alt="Paris" width="50" height="50"> 
-                                    <img src="/style/img/img7.jpg" class="float-end" alt="Paris" width="50" height="50"> 
-                                    <img src="/style/img/img8.jpg" class="float-end" alt="Paris" width="50" height="50"> 
-                                    <img src="/style/img/img9.jpg" class="float-end" alt="Paris" width="50" height="50"> 
-                                    <img src="/style/img/img10.jpg" class="float-end" alt="Paris" width="50" height="50">
-                                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
-                                 </div>
-                        </div>
-                            
-                    </div>
-                </div>
-
-              
-            </div>
-        </div>
-
-        <div class="cart__icon hide-on-mobile-tablet">
-            <a href="https://1.envato.market/c/1306821/275988/4415?u=https%3A%2F%2Fthemeforest.net%2Fcheckout%2Ffrom_item%2F22832625%3Flicense%3Dregular%26aso=https://fullstack.edu.vn/%26aca=https://fullstack.edu.vn/%26aid=mikado" class="cart__icon-link">
-                <i class=" fas fa-shopping-cart"></i>
-            </a>
-        </div>
-        <div class="cart__icon-logo hide-on-mobile-tablet">
-            <a href="index.html" class="cart__icon-link">
-                <svg x="0px" y="0px" viewBox="0 0 87 87" style="fill: #fff;height: 26px;">
-                    <path d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
-                        c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
-                        c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
-                        c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"></path>
-                </svg>
-            </a>
+        <div class="sidebar-menu">
+            <li>
+                <a href="" class="active"><span class="fab fa-accusoft"></span>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/customers.html"><span class="fa-solid fa-users"></span>
+                    <span>Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/tour-manager.html"><span class="bi bi-card-checklist"></span>
+                    <span>Tour manage</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/New-Post.html"><span class="bi bi-stickies"></span>
+                    <span>New Post</span>
+                </a>
+            </li>
+            <li>
+              <a href="/demo admin/account.html"><span class="bi bi-person-circle"></span>
+                <span>Account</span>
+                </a>
+            </li>
+            
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/e9eccf724f.js" crossorigin="anonymous"></script>
-    <script src="/js/js.js"></script>
-    <script>
-        var slideIndex = 0;
-        showSlides();
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="">
+                    <span class="las la-bar"></span>    
+                </label>
 
-        function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "flex";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-    </script>
+                Account
+            </h2>
+            <div class="search-wrapper">
+              <span class="fa-solid fa-magnifying-glass"></span>
+              <input type="search" placeholder="Search here" />
+          </div>
 
-<script>
-
-      
-function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
-        const startTime = performance.now()
-        function updateNumber(currentTime) {
-            const elapsedTime = currentTime - startTime
-            if (elapsedTime > duration) {
-            callback(finalNumber)
-            } else {
-            const rate = elapsedTime / duration
-            const currentNumber = Math.round(rate * finalNumber)
-            callback(currentNumber)
-            requestAnimationFrame(updateNumber)
-            }
-        }
-        requestAnimationFrame(updateNumber)
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-        animateNumber(452, 3000, 0, function (number) {
-            const formattedNumber = number.toLocaleString()
-            document.querySelector('.js-tour-cout').innerText = formattedNumber
-        })
+            <div class="user-wrapper">
+                <!-- <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt=""> -->
+                <div>
+                    <!-- <h4> Admin</h4> -->
+                    <!-- <small>Log Out</small> -->
+                    <div class="dropdown">
+                        <button class="dropbtn " ><i class="dropdown-icon bi bi-person-fill">Welcome User</i>
+                          <i class="dropdown-icon fa fa-caret-down"></i>
+                        </button>
         
-        animateNumber(120, 3000, 0, function (number) {
-            const formattedNumber = number.toLocaleString()
-            document.querySelector('.js-year-cout').innerText = formattedNumber
-        })
-        
-        animateNumber(283, 3000, 0, function (number) {
-            const formattedNumber = number.toLocaleString()
-            document.querySelector('.js-cottage-cout').innerText = formattedNumber
-        })
+                        <div class="dropdown-content">
+                            <a href="#" class=" bi bi-person-circle" >Profile</a>
+                            <a href="#" class=" bi bi-gear-fill">Setting</a>
+                        </div>
+                        
+                      </div>
+                      
+                </div>
+                <a class="logout "href="/Form Login/login.html" style="color: black;"><button class="logout bi bi-person-x-fill "> Log Out</a>
+                      </button>
+            </div>
+        </header>
+    </div>
+    <!-- content -->
+    <div class="footer-main">
+
+          <section id="profile">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card">
+                    <div class="card-header text-center">
+                      <h4>Edit Profile</h4>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" value="User">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" value="user@company.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="bio">Bio</label>
+                          <textarea
+                            name="editor1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit libero illum voluptatibus similique laboriosam nesciunt, saepe optio sed amet facilis quis sit ab omnis error eligendi ad aspernatur officiis sequi nisi facere earum. Asperiores voluptas ut magni consectetur quibusdam quia!</textarea>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+          </section>
+    </div>
+
+    <div class="modalbutton">
+     
+      <!-- update account -->
+      <div class="button">
+        <button type="button" style="padding: 5px 60px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa1" data-whatever="@mdo"><i class="bi bi-arrow-clockwise">Uppdate</i></button> 
+        <div class="modal fade" id="exampleModa1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe1" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: #ff7675 ;">
+                <h5 class="modal-title" id="exampleModalLabe1">Uppdate</h5>
+                <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
+                  <!-- <span aria-hidden="true">&times;</span> -->
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 style="font-weight: 400 ;">Are you sure ? </h2>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+        </div>   
+        </div>
+
+        <!-- //change password// -->
+        <div class="button">
+          <button type="button" style="padding: 5px 60px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo"><i class="bi bi-lock-fill">Change Password</i></button> 
+          <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #ff7675 ;">
+                  <h5 class="modal-title" id="exampleModalLabe2"> Change Password</h5>
+                  <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save change</button>
+                </div>
+              </div>
+            </div>
+          </div>   
+          </div>
 
 
-        animateNumber(197, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.querySelector('.js-res-cout').innerText = formattedNumber
-        })
-        })
-    </script> 
+          <!-- deleteaccount -->
+          <div class="button">
+            <button type="button" style="padding: 5px 60px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo"><i class="bi bi-trash">Delete Acount</i></button> 
+            <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header" style="background-color: #ff7675 ;">
+                    <h5 class="modal-title" id="exampleModalLabe3"> Delete Acount</h5>
+                    <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
+                      <!-- <span aria-hidden="true">&times;</span> -->
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h2 style="font-weight: 400 ;">Are you sure ? </h2>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>   
+            </div>
 
-<script>
-    //  moda-search
-    const moda1 = document.getElementById('show-moda');
-    const moda2 = document.getElementById('moda-appear');
-    moda1.onclick = function(){
-        moda2.style.width = '100vw';
-    }
 
-    const closedModa = document.getElementById('moda-close');
-    closedModa.onclick = function(){
-        moda2.style.width = '0'
-        moda2.style.animation='fadeIn linear 1s';
-    }
+    </div>
 
+  
+
+
+
+
+ </body>
+ <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+    // Modal Editor
+    CKEDITOR.replace('editor1');
+  </script>
+ </html>
     
-
-</script>
-
-
-
-
-</body>
-</html>
