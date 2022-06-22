@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/demo admin/style/account.css">
     <link rel="stylesheet" href="/demo admin/style/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,12 +65,12 @@
                     <span class="las la-bar"></span>    
                 </label>
 
-                Dashboard
+                Account
             </h2>
             <div class="search-wrapper">
-                <span class="fa-solid fa-magnifying-glass"></span>
-                <input type="search" placeholder="Search here" />
-            </div>
+              <span class="fa-solid fa-magnifying-glass"></span>
+              <input type="search" placeholder="Search here" />
+          </div>
 
             <div class="user-wrapper">
                 <!-- <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt=""> -->
@@ -93,111 +94,135 @@
                       </button>
             </div>
         </header>
+    </div>
+    <!-- content -->
+    <div class="footer-main">
 
-        <main>
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <h1><i class="fas fa-address-card"></i> 124 </h1>
-                        <span>Customers</span>
+          <section id="profile">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card">
+                    <div class="card-header text-center">
+                      <h4>Edit Profile</h4>
                     </div>
-
-                    <div>
-                        <span class="las la-users"></span>
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" value="User">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" value="user@company.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="bio">Bio</label>
+                          <textarea
+                            name="editor1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit libero illum voluptatibus similique laboriosam nesciunt, saepe optio sed amet facilis quis sit ab omnis error eligendi ad aspernatur officiis sequi nisi facere earum. Asperiores voluptas ut magni consectetur quibusdam quia!</textarea>
+                        </div>
+                      </form>
                     </div>
+                  </div>
                 </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1><i class="fa-solid fa-location-dot"></i> 5</h1>
-                        <span>Tour</span>
-                    </div>
-
-                    <div>
-                        <span class="las la-clipboard"></span>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1><i class="fa-solid fa-user"></i> 54</h1>
-                        <span>oders </span>
-                    </div>
-
-                    <div>
-                        <span class="las la-shopping-bar"></span>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1><i class="fa-solid fa-dollar-sign"></i> 63.900</h1>
-                        <span>USD</span>
-                    </div>
-
-                    <div>
-                        <span class="las la-google-wallet"></span>
-                    </div>
-                </div>
-            </div>
-            
-        </main>
+                
+          </section>
     </div>
 
-<!-- content -->
+    <div class="modalbutton">
+     
 
-
-<div class="content">
-    <div class="title">
-        <h1 class="title_user" style="font-weight: bold">
-          <i  class="bi bi-gear-fill"></i>
-             Dashboard
-        </h1>
-    </div>
-    <!-- <div class="button">
-      <div class="buttun-item">
-        <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">+ Add tour</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="button">
+        <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">+ Add user</button> 
+        <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-header" style="background-color: #74b9ff">
-                <h5 class="modal-title" id="exampleModalLabel"> Add Tour</h5>
-                <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #74b9ff ;">
-                 
+              <div class="modal-header" style="background-color: #ff7675 ;">
+                <h5 class="modal-title" id="exampleModalLabe3"> Add User</h5>
+                <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
+                  <!-- <span aria-hidden="true">&times;</span> -->
                 </button>
               </div>
               <div class="modal-body">
                 <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Name Title</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                  <div class="mb-3">
+                    <label for="exampleInputName1" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp">
                   </div>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Location</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   
                   </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Content</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                </form>
-                <div class="mb-3">
-                  <label for="formFile" class="form-label">Upload Image</label>
-                  <input class="form-control" type="file" id="formFile"  >
-                </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPhone1" class="form-label">Phone</label>
+                    <input type="type" class="form-control" id="exampleInputPhone2">
+                  </div>
+                  
                 
+                </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="add">Save change</button>
+                
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save change</button>
               </div>
             </div>
           </div>
         </div>   
         </div>
 
-        
 
-          <div class="buttun-item">
+        <!-- //change password// -->
+        <div class="button">
+          <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">+ Add user</button> 
+          <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #ff7675 ;">
+                  <h5 class="modal-title" id="exampleModalLabe3"> Add User</h5>
+                  <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputName1" class="form-label">Name</label>
+                      <input type="name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                     
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPhone1" class="form-label">Phone</label>
+                      <input type="type" class="form-control" id="exampleInputPhone2">
+                    </div>
+                    
+                  
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save change</button>
+                </div>
+              </div>
+            </div>
+          </div>   
+          </div>
+
+
+          <!-- deleteaccount -->
+          <div class="button">
             <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">+ Add user</button> 
             <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -205,7 +230,7 @@
                   <div class="modal-header" style="background-color: #ff7675 ;">
                     <h5 class="modal-title" id="exampleModalLabe3"> Add User</h5>
                     <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
-                      
+                      <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
                   </div>
                   <div class="modal-body">
@@ -241,81 +266,20 @@
             </div>
 
 
+    </div>
 
-            
-
-            </div>
-
-
-
-            
-            <div class="table">
-              <div class="header-table">
-                <h2>Latest Posts</h2>
-              </div>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title tour</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Content</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">USD</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Kids Ski School</td>
-                    <td>New York</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1600</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Magic of Italy</td>
-                    <td>Italy</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Winter Actiton</td>
-                    <td>La France</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1200</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Skiing In Alps</td>
-                    <td>New Zealand</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$450</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Snow Surfing</td>
-                    <td>Japan</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$720</td>
-                  </tr>
-                </tbody>
-              </table>
-            
-    </div> -->
-
-</div>
+  
 
 
 
-</body> 
 
-<script src="/demo admin/js.js"></script>
-</html>
+ </body>
+ <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+    // Modal Editor
+    CKEDITOR.replace('editor1');
+  </script>
+ </html>
+    
