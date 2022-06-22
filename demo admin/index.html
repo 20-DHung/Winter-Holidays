@@ -154,168 +154,101 @@
              Dashboard
         </h1>
     </div>
-    <!-- <div class="button">
-      <div class="buttun-item">
-        <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">+ Add tour</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header" style="background-color: #74b9ff">
-                <h5 class="modal-title" id="exampleModalLabel"> Add Tour</h5>
-                <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #74b9ff ;">
-                 
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Name Title</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Location</label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Content</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-                </form>
-                <div class="mb-3">
-                  <label for="formFile" class="form-label">Upload Image</label>
-                  <input class="form-control" type="file" id="formFile"  >
-                </div>
-                
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="add">Save change</button>
-              </div>
-            </div>
-          </div>
-        </div>   
-        </div>
-
-        
-
-          <div class="buttun-item">
-            <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">+ Add user</button> 
-            <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header" style="background-color: #ff7675 ;">
-                    <h5 class="modal-title" id="exampleModalLabe3"> Add User</h5>
-                    <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
-                      
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label">Name</label>
-                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                       
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPhone1" class="form-label">Phone</label>
-                        <input type="type" class="form-control" id="exampleInputPhone2">
-                      </div>
-                      
-                    
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save change</button>
-                  </div>
-                </div>
-              </div>
-            </div>   
-            </div>
+</div>
 
 
 
-            
+<div class="Pie-charts">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-            </div>
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Oders',     4],
+        ['Tour',      3],
+        ['USD', 5],
+        ['Customer', 6]
+      ]);
+
+      var options = {
+        title: ' Pie'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="piechart" style="width: 900px; height: 500px;"></div>
+</body>
 
 
 
-            
-            <div class="table">
-              <div class="header-table">
-                <h2>Latest Posts</h2>
-              </div>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title tour</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Content</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">USD</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Kids Ski School</td>
-                    <td>New York</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1600</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Magic of Italy</td>
-                    <td>Italy</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Winter Actiton</td>
-                    <td>La France</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$1200</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Skiing In Alps</td>
-                    <td>New Zealand</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$450</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Snow Surfing</td>
-                    <td>Japan</td>
-                    <td>.</td>
-                    <td>.</td>
-                    <td>$720</td>
-                  </tr>
-                </tbody>
-              </table>
-            
-    </div> -->
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["Customer", 35.3, "#009432"],
+        ["oder", 23.5, "#3498db"],
+        ["Tour", 16.7, "#d63031"],
+        ["USD", 27.8, "#f39c12"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        title: "Column",
+        width: 600,
+        height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+
+
 
 </div>
 
 
 
-</body> 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body> 
 <script src="/demo admin/js.js"></script>
 </html>
