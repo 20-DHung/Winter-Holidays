@@ -208,4 +208,6 @@
     display: flex;
     justify-content: space-between;
 }
-
+.header-table{
+    text-align: center;
+}
