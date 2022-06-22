@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/demo admin/style/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/demo admin/style/tour-manager.css">
+    <title>Admin</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-accusoft"></span> ADMIN</h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <li>
+                <a href="/demo admin/index.html" class="active"><span class="fab fa-accusoft"></span>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/customers.html"><span class="fa-solid fa-users"></span>
+                    <span>Customers</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/tour-manager.html"><span class="bi bi-card-checklist"></span>
+                    <span>Tour Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="/demo admin/oders.html"><span class="las la-igloo"></span>
+                    <span>Oders</span>
+                </a>
+            </li>
+            <li>
+                <a href=""><span class="las la-igloo"></span>
+                    <span>Account</span>
+                </a>
+            </li>
+            
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="">
+                    <span class="las la-bar"></span>    
+                </label>
+
+                Tour Manage
+            </h2>
+            <div class="search-wrapper">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <input type="search" placeholder="Search here" />
+            </div>
+
+            <div class="user-wrapper">
+                <!-- <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt=""> -->
+                <div>
+                    <!-- <h4> Admin</h4> -->
+                    <!-- <small>Log Out</small> -->
+                    <div class="dropdown">
+                        <button class="dropbtn " ><i class="dropdown-icon bi bi-person-fill">Welcome User</i>
+                          <i class="dropdown-icon fa fa-caret-down"></i>
+                        </button>
+                        <a class="logout "href="/Form Login/login.html" style="color: black;"><button class="logout bi bi-person-x-fill "> Log Out</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" class=" bi bi-person-circle" >Profile</a>
+                            <a href="#" class=" bi bi-gear-fill">Setting</a>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+        </header>
+
+
+<!-- content -->
+        <div class="content">
+            <div class="title">
+                <h1 class="title_user" style="font-weight: bold">
+                  <i  class="bi bi-gear-fill"></i>
+                     Tour list
+                </h1>
+            </div>
+            <div class="button">
+              <div class="buttun-item">
+                <button type="button" style="padding: 5px 100px ; margin: 0 20px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">+ Add tour</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header" style="background-color: #74b9ff">
+                        <h5 class="modal-title" id="exampleModalLabel"> Add Tour</h5>
+                        <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #74b9ff ;">
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Name Title</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Location</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="form-group">
+                            <label for="message-text" class="col-form-label">Content</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">USD</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                        </form>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Upload Image</label>
+                          <input class="form-control" type="file" id="formFile"  >
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="add">Save change</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>   
+                </div>
+        
+                
+        
+                  
+        
+        
+        
+                    
+        
+        </div>
+        
+        
+        
+                    
+                    <div class="table">
+                      <div class="header-table">
+                        <h2>Latest Posts</h2>
+                      </div>
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title tour</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Content</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">USD</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Kids Ski School</td>
+                            <td>New York</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>$1600</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Magic of Italy</td>
+                            <td>Italy</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>$1000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Winter Actiton</td>
+                            <td>La France</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>$1200</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Skiing In Alps</td>
+                            <td>New Zealand</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>$450</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Snow Surfing</td>
+                            <td>Japan</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>$720</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+            </div>
+        
+        </div>
+        
+        
+        
+        </body> 
+        
+        <script src="/demo admin/js.js"></script>
+        </html>       
