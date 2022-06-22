@@ -71,12 +71,12 @@
 
         <div class="sidebar-menu">
             <li>
-                <a href="" class="active"><i class="fab fa-accusoft"></i>
+                <a href="" class="active"><span class="fab fa-accusoft"></span>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a href="/demo admin/customers.html"><i class="fa-solid fa-users"></i>
+                <a href="/demo admin/customers.html"><span class="fa-solid fa-users"></span>
                     <span>Customers</span>
                 </a>
             </li>
@@ -95,6 +95,7 @@
                     <span>Account</span>
                 </a>
             </li>
+            
         </div>
     </div>
 
@@ -108,7 +109,7 @@
                 Dashboard
             </h2>
             <div class="search-wrapper">
-                <span class="las la-search"></span>
+                <span class="fa-solid fa-magnifying-glass"></span>
                 <input type="search" placeholder="Search here" />
             </div>
 
@@ -125,7 +126,7 @@
             <div class="cards">
                 <div class="card-single">
                     <div>
-                        <h1>124</h1>
+                        <h1><i class="fas fa-address-card"></i> 124 </h1>
                         <span>Customers</span>
                     </div>
 
@@ -136,7 +137,7 @@
 
                 <div class="card-single">
                     <div>
-                        <h1>5</h1>
+                        <h1><i class="fa-solid fa-location-dot"></i> 5</h1>
                         <span>Tour</span>
                     </div>
 
@@ -147,7 +148,7 @@
 
                 <div class="card-single">
                     <div>
-                        <h1>54</h1>
+                        <h1><i class="fa-solid fa-user"></i> 54</h1>
                         <span>oders </span>
                     </div>
 
@@ -158,7 +159,7 @@
 
                 <div class="card-single">
                     <div>
-                        <h1>$63.900</h1>
+                        <h1><i class="fa-solid fa-dollar-sign"></i> 63.900</h1>
                         <span>USD</span>
                     </div>
 
@@ -260,7 +261,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header" style="background-color: #74b9ff">
-                <h5 class="modal-title" id="exampleModalLabel"> Add tour</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> Add Tour</h5>
                 <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #74b9ff ;">
                   <!-- <span aria-hidden="true">&times;</span> -->
                 </button>
@@ -268,7 +269,11 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Title</label>
+                    <label for="recipient-name" class="col-form-label">Name Title</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Location</label>
                     <input type="text" class="form-control" id="recipient-name">
                   </div>
                   <div class="form-group">
@@ -283,7 +288,7 @@
                 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="add">Save</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"  onclick="add">Save change</button>
               </div>
             </div>
           </div>
@@ -298,7 +303,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header" style="background-color: #ff7675 ;">
-                    <h5 class="modal-title" id="exampleModalLabe3"> Add user</h5>
+                    <h5 class="modal-title" id="exampleModalLabe3"> Add User</h5>
                     <button type="button" class="btn-close  " data-dismiss="modal" aria-label="Close" style="border: none; background-color: #ff7675 ;">
                       <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
@@ -306,8 +311,8 @@
                   <div class="modal-body">
                     <form>
                       <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="NameHelp">
+                        <label for="exampleInputName1" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp">
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email </label>
@@ -319,8 +324,8 @@
                         <input type="password" class="form-control" id="exampleInputPassword1">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2">
+                        <label for="exampleInputPhone1" class="form-label">Phone</label>
+                        <input type="type" class="form-control" id="exampleInputPhone2">
                       </div>
                       
                     
