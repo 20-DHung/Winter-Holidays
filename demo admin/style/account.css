@@ -1,0 +1,15 @@
+
+ .row {
+    padding-top: 115px;
+ 
+    flex-direction: row-reverse;
+ }
+
+ .modalbutton {
+   display: flex;
+   /* justify-content: center; */
+   float: right;
+   padding-top: 25px;
+   padding-right: 110px;
+   margin-bottom: 200px;
+ }
