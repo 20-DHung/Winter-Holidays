@@ -217,6 +217,11 @@
     justify-content: space-between;
 }
 
+.header-table{
+    text-align: center;
+}
+
+
 
 .dropdown {
     float: left;
