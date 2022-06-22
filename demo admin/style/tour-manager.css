@@ -7,3 +7,13 @@
 .button{
     margin: 30px 0;
 }
+
+.pagination {
+    padding-top: 10px;
+}
+.page-link {
+    color: black;
+}
+.pagination a {
+    color: black;
+}

@@ -58,9 +58,14 @@
 }
 
 .sidebar-brand {
-    height: 90px;
+    height: 71px;
     padding-left: 1rem 0rem 1rem 2rem;
     color: #fff;
+}
+
+.sidebar-brand h2 {
+  padding-top: 20px;
+  padding-left: 75px;
 }
 
 .sidebar-brand span {
@@ -113,6 +118,7 @@
     left: 345px;
     width: calc(100% - 345px);
     top: 0;
+    background-color: #fff;
     z-index: 100;
 }
 
