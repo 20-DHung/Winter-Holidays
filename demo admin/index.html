@@ -15,54 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div class="wraper">
-        <div class="tab">
-            
-            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-          </div>
-          
-          <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>London is the capital city of England.</p>
-          </div>
-          
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-          </div>
-          
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div>
-
-          <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-          </div>
-          
-          <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-          </div>
-          
-          <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div>
-                
-    </div>-->
-
 
     <div class="sidebar">
         <div class="sidebar-brand">
@@ -114,10 +72,22 @@
             </div>
 
             <div class="user-wrapper">
-                <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt="">
+                <!-- <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt=""> -->
                 <div>
-                    <h4> Admin</h4>
-                    <small>Log Out</small>
+                    <!-- <h4> Admin</h4> -->
+                    <!-- <small>Log Out</small> -->
+                    <div class="dropdown">
+                        <button class="dropbtn " ><i class="dropdown-icon bi bi-person-fill">Welcome User</i>
+                          <i class="dropdown-icon fa fa-caret-down"></i>
+                        </button>
+                        <a class="logout "href="/Form Login/login.html" style="color: black;"><button class="logout bi bi-person-x-fill "> Log Out</a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#" class=" bi bi-person-circle" >Profile</a>
+                            <a href="#" class=" bi bi-gear-fill">Setting</a>
+                        </div>
+                      </div>
+                      
                 </div>
             </div>
         </header>
@@ -165,78 +135,6 @@
 
                     <div>
                         <span class="las la-google-wallet"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recent-grid">
-                <div class="projects">
-                    <div class="card-header">
-                        <h3>Recent Projects</h3>
-
-                        <button>See all <span class="las la-arrow-right"></span></button>
-                    </div>
-
-                    <div class="card-body">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td> Project Title</td>
-                                    <td> Department</td>
-                                    <td> Status</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>UI/UX Desgin</td>
-                                    <td>Chua biet gi gi</td>
-                                    <td>
-                                        <span class="status"></span>
-                                       ghi cai gi avao day 
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Web development</td>
-                                    <td>UI Team</td>
-                                    <td>
-                                        <span class="status"></span>
-                                        review
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Settal app</td>
-                                    <td>UI Team</td>
-                                    <td>
-                                        <span class="status"></span>
-                                        review
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="customer">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>News</h3>
-
-                        <button>See all <span class="las la-arrow-right"></span></button>
-                    </div>
-                    <div class="card-body">
-                        <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt="" class="">
-                        <div>
-                            <h4>Lew lew lew lew</h4>
-                            <small>Ceooooooo</small>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="las la-user-cricle"></span>
-                        <span class="las la-comment"></span>
-                        <span class="las la-phone"></span>
                     </div>
                 </div>
             </div>
