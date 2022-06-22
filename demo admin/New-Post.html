@@ -16,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="/demo admin/style/customers.css">
-    <link rel="stylesheet" href="/demo admin/style/oders.css">
+    <link rel="stylesheet" href="/demo admin/style/New-Post.css">
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!-- <div class="wraper">
@@ -112,65 +115,85 @@
             </div>
 
             <div class="user-wrapper">
-                <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt="">
-                <div>
-                    <h4> Admin</h4>
-                    <small>Log Out</small>
-                </div>
-            </div>
+              <!-- <img src="/style/img/mainslider2.jpg" width="40px" height="40px" alt=""> -->
+              <div>
+                  <!-- <h4> Admin</h4> -->
+                  <!-- <small>Log Out</small> -->
+                  <div class="dropdown">
+                      <button class="dropbtn " ><i class="dropdown-icon bi bi-person-fill">Welcome User</i>
+                        <i class="dropdown-icon fa fa-caret-down"></i>
+                      </button>
+      
+                      <div class="dropdown-content">
+                          <a href="#" class=" bi bi-person-circle" >Profile</a>
+                          <a href="#" class=" bi bi-gear-fill">Setting</a>
+                      </div>
+                      
+                    </div>
+                    
+              </div>
+              <a class="logout "href="/Form Login/login.html" style="color: black;"><button class="logout bi bi-person-x-fill "> Log Out</a>
+                    </button>
+          </div>
         </header>
 
-        <!-- <main>
-            <div class="cards">
-                <div class="card-single">
-                    <div>
-                        <h1>54</h1>
-                        <span>Customers</span>
-                    </div>
-
-                    <div>
-                        <span class="las la-users"></span>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1>79</h1>
-                        <span>Project</span>
-                    </div>
-
-                    <div>
-                        <span class="las la-clipboard"></span>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1>124</h1>
-                        <span>oders </span>
-                    </div>
-
-                    <div>
-                        <span class="las la-shopping-bar"></span>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div>
-                        <h1>$6</h1>
-                        <span>Income</span>
-                    </div>
-
-                    <div>
-                        <span class="las la-google-wallet"></span>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div> -->
+      
 <!-- content -->
 <div class="content">
-    <p>aa</p>
+
+  <div class="header-content">
+    <h1 style="display: flex; justify-content: space-around;">Add New Post</h1>
+  </div>
+
+  
+    <section id="details">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Edit Post</h4>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="title">Title</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                      <label for="category">Category</label>
+                      <select class="form-control">
+                        <option selected>Summer</option>
+                        <option>Winter</option>
+                        <option>Spring</option>
+                        <option>Fall</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="image">Upload Image</label>
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="image">
+                        <label for="image" class="custom-file-label">Choose File</label>
+                        <small class="form-text text-muted">Max Size 3Mb</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="body">Content</label>
+                        <textarea name="editor1"
+                          class="form-control">.....</textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-add">Add Post</button>
+      </section>
+      <!-- <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div> -->
 </div>
 
 
